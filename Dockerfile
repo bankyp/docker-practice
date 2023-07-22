@@ -1,7 +1,7 @@
 # This ia a sample using node.js to create an Image
 
 #Use the 'node' official image, with the alpine 20.x ('node:20-alpine')
-FROM alpine:3.18
+FROM node:16-alpine
 
 EXPOSE 3000
 
