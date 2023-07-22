@@ -13,6 +13,8 @@ RUN apk add --no-cache tini \
     && npm install \
     && npm cache clean --force
 
-EXPOSE 80
+COPY . .
 
-CMD [ "node", "server.js" ]
+EXPOSE 3000
+
+CMD [ "/sbin/tini", "--", "node", "./bin/www" ]
