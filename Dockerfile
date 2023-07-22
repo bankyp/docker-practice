@@ -9,7 +9,7 @@ WORKDIR /usr/src/app
 
 COPY package.json package.json
 
-RUN apk add --no-cache tini && npm cache clean --force
+RUN apk add --no-cache tini \ && npm cache clean --force
 
 EXPOSE 80
 
